@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BREWASIS</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <h1 id="top">BREWASIS</h1>
+    <h3 id="top">Clients table</h3>
+<!--    <form method=post>
+      <div>
+        <textarea id="c_id" name="c_id" placeholder="ID"></textarea>
+        <textarea id="sale_date" name="sale_date" placeholder="DATE YYYY-MM-DD"></textarea>
+        <textarea id="count" name="count" placeholder="COUNT"></textarea>
+      </div>
+      <div><button id="go" type="submit">Create data</button></div>
+    </form> -->
+    <!-- post content will go here -->
+    <div id="data">
+    <table id="table" style="background-color: #f2f2f2;"> <tr> <td style = "width:30px">ID</td> <td style="width:200px">CLIENT</td> <td style="width:220px">BILL STREET</td> <td style="width:150px">BILL CITY</td><td>LICENSE</td></tr> </table>
+ {{clients_data | safe}}
+    </div>
+  </body>
+</html>
